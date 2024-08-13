@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import 'aos/dist/aos.css'; // Import AOS styles
 import AOS from 'aos'; // Import AOS for animations
 
+
 function Hcard() {
   // Initialize AOS animations
   useEffect(() => {
@@ -17,7 +18,7 @@ function Hcard() {
       id: '001',
       image: 'https://i.ibb.co/TbbK9TJ/Elegant-Venue.jpg',
       title: 'Elegant Venue',
-      price: 'RS 20000',
+      price: '$2000',
       description:
         'Our Elegant Venue provides an enchanting backdrop for your birthday celebration. This sophisticated space, bathed in soft lights.',
     },
@@ -25,7 +26,7 @@ function Hcard() {
       id: '002',
       image: 'https://i.ibb.co/LnQJt7W/Customized-Invitations.jpg',
       title: 'Customized Invitations',
-      price: 'RS 30000',
+      price: '$300',
       description:
         'Set the tone for your event with our Customized Invitations service. Our skilled designers craft invitations that perfectly mirror.',
     },
@@ -33,7 +34,7 @@ function Hcard() {
       id: '003',
       image: 'https://i.ibb.co/hRrHPYr/Enchanting-Decorations.jpg',
       title: 'Enchanting Decorations',
-      price: 'RS 40000',
+      price: '$500',
       description:
         'Transform your venue into a magical wonderland with our Enchanting Decorations service. Drapes cascading like waterfalls, fairy lights.',
     },
@@ -41,7 +42,7 @@ function Hcard() {
       id: '004',
       image: 'https://i.ibb.co/dL1VvRB/Gourmet-Catering.jpg',
       title: 'Gourmet Catering',
-      price: 'RS 100000',
+      price: '$1500',
       description:
         'Indulge your guests in a culinary journey with our Gourmet Catering service. Our expert chefs curate a menu that tantalizes taste buds.',
     },
@@ -49,7 +50,7 @@ function Hcard() {
       id: '005',
       image: 'https://i.ibb.co/W6qMgrq/Creative-Cakes-and-Desserts.webp',
       title: 'Creative Cakes and Desserts',
-      price: 'RS 5000',
+      price: '$250',
       description:
         'Satisfy your sweet cravings with our Creative Cakes and Desserts service. Our pastry chefs are artists, crafting delightful confections.',
     },
@@ -57,14 +58,14 @@ function Hcard() {
       id: '006',
       image: 'https://i.ibb.co/ckSwN6R/Live-Entertainment.jpg',
       title: 'Live Entertainment',
-      price: 'RS 80000',
+      price: '$800',
       description:
         'Elevate your party with our Live Entertainment service. Whether you prefer the soulful tunes of a live band, the energetic beats of a DJ.',
     },
   ];
 
   return (
-    <div className="services-section bg-gradient-to-r from-green-600 to-blue-400 py-12">
+    <div className="services-section bg-sky-700 py-12">
       {/* Title Section */}
       <div
         data-aos="fade-down"
@@ -74,7 +75,7 @@ function Hcard() {
         <h1 className="sub_title text-5xl font-bold text-white">
           Awesome Services
         </h1>
-        <p className="text-lg text-gray-200">
+        <p className="text-lg text-gray-300">
           Checkout what we can do for your party
         </p>
       </div>
@@ -85,7 +86,7 @@ function Hcard() {
           <div
             key={service.id}
             data-aos="fade-up"
-            className="card service_card bg-white bg-opacity-10 backdrop-blur-lg shadow-xl rounded-lg overflow-hidden"
+            className="card service_card bg-gray-800 shadow-xl rounded-lg overflow-hidden"
           >
             <figure className="relative max-h-72">
               <img
@@ -97,7 +98,7 @@ function Hcard() {
                 <img className="w-full" src="/images/wave_card.png" alt="" />
               </div>
             </figure>
-            <div className="card-body relative text-white py-10 px-4">
+            <div className="card-body relative bg-gray-900 text-white py-10 px-4">
               <div className="absolute bellown-container -bottom-4 right-10">
                 <img
                   src="/images/bellown.png"
@@ -106,17 +107,14 @@ function Hcard() {
                 />
               </div>
               <div className="price-container mb-4">
-                <h3 className="text-xl font-semibold">{service.price}</h3>
+                <h3 className="text-xl font-semibold text-gray-300">{service.price}</h3>
               </div>
-              <h2 className="card-title text-2xl font-bold mb-4">
-                {service.title}
-              </h2>
+              <h2 className="card-title text-2xl font-bold mb-4">{service.title}</h2>
               <p className="leading-7 mb-6">{service.description}</p>
               <div className="card-actions">
+                 
                 <a href={`/singleService/${service.id}`}>
-                  <button className="mt-5 bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 transition-colors duration-200 capitalize text-lg px-8 py-3 rounded-full text-white shadow-md">
-                    View Details
-                  </button>
+                  <button className="btn btn-info text-white">View Details</button>
                 </a>
               </div>
             </div>
