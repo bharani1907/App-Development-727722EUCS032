@@ -5,12 +5,16 @@ import Footer from './Footer';
 
 const Service = () => {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'rgb(17, 20, 39)' }}> {/* Full screen height with custom background */}
+    <div className=''>
+    <div className="min-h-screen  bg-sky-700" > {/* Full screen height with custom background */}
       <Navbar />
       <div className="container mx-auto py-10 px-4">
         <Hcard />
-        <Footer/>
+        
+       
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };
