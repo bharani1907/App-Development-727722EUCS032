@@ -169,7 +169,7 @@ const Adminlogin = () => {
           </>
         )}
 
-        {activeTab === 'settings' && (
+        {activeTab === 'Settings' && (
           <>
             <h2 className="text-4xl font-extrabold mb-8 text-gray-900">Settings</h2>
             <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
