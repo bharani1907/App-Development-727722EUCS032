@@ -16,7 +16,7 @@ AOS.init();
   return (
     <div
       data-aos="zoom-in"
-      className="text-white my-20 bg-gray-900 p-10 rounded-full container mx-auto aos-init aos-animate"
+      className="text-white my-20  p-10 rounded-lg container mx-auto aos-init aos-animate"
     >
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="countdown_item font-bold text-center">
